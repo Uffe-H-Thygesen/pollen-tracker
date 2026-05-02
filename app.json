@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Pollen Tracker",
+    "slug": "pollen-tracker",
+    "version": "1.0.0",
+    "scheme": "pollentracker",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Pollen Tracker uses your location to fetch local pollen data."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pollentracker.app"
+    },
+    "android": {
+      "package": "com.pollentracker.app",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    }
+  }
+}
