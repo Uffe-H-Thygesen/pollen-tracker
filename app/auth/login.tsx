@@ -46,7 +46,7 @@ export default function LoginScreen() {
         {loading ? <ActivityIndicator color="#fff" /> : <Text style={styles.buttonText}>Sign In</Text>}
       </TouchableOpacity>
 
-      <Link href="/auth/register" style={styles.link}>
+      <Link href={'/auth/register' as any} style={styles.link}>
         Don't have an account? Register
       </Link>
     </KeyboardAvoidingView>

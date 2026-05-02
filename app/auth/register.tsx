@@ -50,7 +50,7 @@ export default function RegisterScreen() {
         {loading ? <ActivityIndicator color="#fff" /> : <Text style={styles.buttonText}>Create Account</Text>}
       </TouchableOpacity>
 
-      <Link href="/auth/login" style={styles.link}>
+      <Link href={'/auth/login' as any} style={styles.link}>
         Already have an account? Sign in
       </Link>
     </KeyboardAvoidingView>

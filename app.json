@@ -17,7 +17,8 @@
         {
           "locationWhenInUsePermission": "Pollen Tracker uses your location to fetch local pollen data."
         }
-      ]
+      ],
+      "expo-asset"
     ],
     "ios": {
       "supportsTablet": true,
@@ -25,7 +26,10 @@
     },
     "android": {
       "package": "com.pollentracker.app",
-      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
     }
   }
 }
